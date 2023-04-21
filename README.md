@@ -12,9 +12,9 @@ I am grateful for the use of the sound files from freesound.org.
 I converted from wav to mp3 for compression. I posted the compressed versions I made with this project. 
 My contributions and modifications to the sound files are unrestricted (same as the code).
 But these original sounds have license restrictions, so you should reference them if you are considering redistribution.
- acclivity : https://freesound.org/people/acclivity/sounds/25882/ (Noncommerical 4.0)
- sub-d : https://freesound.org/people/Sub-d/sounds/46989/ (Creative Commons 0)
- SouthernUK : https://freesound.org/people/SouthernUK/sounds/141849/ (Noncommerical 3.0)
+* acclivity : https://freesound.org/people/acclivity/sounds/25882/ (Noncommerical 4.0)
+* sub-d : https://freesound.org/people/Sub-d/sounds/46989/ (Creative Commons 0)
+* SouthernUK : https://freesound.org/people/SouthernUK/sounds/141849/ (Noncommerical 3.0)
 
 ## Deployment
 
