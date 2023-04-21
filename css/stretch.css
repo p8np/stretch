@@ -1,0 +1,155 @@
+/*-----------------------------------------------------------------------------
+// Stretching Timer
+// PL Bissell : 4/20/2023
+//
+// CSS impaired. Most of this is borrowed from Bootstrap templates.
+// The rest from somewhere else. Or created by my desperate random 
+// keystrokes poked with crossed fingers.
+//-----------------------------------------------------------------------------
+*/
+
+body 
+{ background-color: lightslategrey;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  /* Smoothly transition the background color */
+  transition: background-color 1s;
+  color: ghostwhite;
+}
+
+.select-num
+{ width: 100px;
+  /* background-color: dodgerblue; */
+  font-size: 1.2em;
+}
+
+.settings-button {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.settings-button {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 2rem;
+  padding: calc(.5rem - 1px) calc(.7rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.settings-button:hover,
+.settings-button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.settings-button:hover {
+  transform: translateY(-1px);
+}
+
+.settings-button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.settings-group
+{ width: 100%;
+  /* background-color: dodgerblue; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+ }
+
+.settings-unit
+{ margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+
+.info-text
+{ margin-bottom: 10px; 
+  font-size: calc(2vw + 2vh + 1vmin); 
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+
+.massive-text
+{ margin-bottom: 15px; 
+  font-size: calc(5vw + 5vh + 3vmin); 
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+
+#play-button
+{ margin-top:25px;
+}
+
+#add-preset
+{ margin-left: 20px 
+}
+
+#act-group
+{ display: none;
+}
+
+#act-name
+{ width: 80%;
+}
+
+#save-warning
+{ display: none; 
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stretch Timer</title>
+  
+  <!-- Load the custom CSS style file -->
+  <link rel="stylesheet" type="text/css" href="css/stretch.css">
+
+</head>
+<body>
+    <div class="settings-group" id="main-form">
+      <div class="info-text" id="sessions-remaining">Ready</div>
+      
+      <div class="settings-unit"> 
+        <label class="label-text" for="settings-sel">Presets:</label>
+        <select class="select-drop" name="settings-sel" id="settings-sel" onchange="change_preset()"></select>
+        <button class="sm-button" id="add-preset" onclick="add_preset()">+</button>
+        <button class="sm-button" id="edit-preset" value="0" onclick="edit_or_save_preset()">Rename</button>
+        <button class="sm-button" id="del-preset" onclick="del_preset()">-</button>
+      </div>
+
+
+      <div class="settings-unit" id="act-group"> 
+        <label class="label-text" for="act-name">Preset Name:</label><br>
+        <input class="select-num" type="text" id="act-name" size=60>
+      </div>
+
+      <div class="settings-unit"> 
+        <label class="label-text" for="session-duration">Session Duration</label>
+        <input class="select-num" type="number" id="session-duration" min="1" max="500" onchange="sett_chg(0)">
+      </div>
+        
+      <div class="settings-unit"> 
+        <label class="label-text" for="gap-duration">Gap Duration</label>
+        <input class="select-num" type="number" id="gap-duration" min="1" max="100" onchange="sett_chg(0)">
+      </div>
+  
+      <div class="settings-unit"> 
+        <label class="label-text" for="session-count">Number of Sessions</label>
+        <input class="select-num" type="number" id="session-count" min="1" max="100" onchange="sett_chg(0)">
+      </div>
+
+      <div class="settings-unit"> 
+        <label class="label-text" for="bpm">Beats/Min</label>
+        <input class="select-num" type="number" id="bpm" min="1" max="300" onchange="sett_chg(0)">
+      </div>
+     
+      <div class="settings-unit"> 
+        <text class="exsm-text" id="save-warning">* values have changed, hit Start to save them</text>
+      </div>
+
+      <div class="settings-unit"> 
+        <button class="settings-button" id="play-button" onclick="toggle_play_button()">Play</button><br>
+      </div>
+      <div class="settings-unit"> 
+        <button class="settings-button" id="reset-button" onclick="hit_reset_button()">Reset</button><br>
+      </div>
+
+     <div class="massive-text" id="time-remaining"></div>
+    </div>
+    <div class="settings-group" id="enter-form"> 
+      <div class="settings-unit">
+        <button class="settings-button" id="play-button" onclick="enter_app()">Initialize Stretch Timer</button><br>
+      </div>
+    </div>
+
+</body>
+  <script src="js/stretch.js"></script>
+</html>
+
