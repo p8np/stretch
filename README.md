@@ -26,3 +26,8 @@ The directory structure is arbitrary and easily changed. CSS and JS are
 specified in stretch.html. The audio files are specified in stretch.js
 
 It uses browser local storage to store user presets. 
+
+## DEMO
+
+You can see it at http://www.nodawaygames.com/stretch.html
+
